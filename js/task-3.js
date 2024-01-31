@@ -1,6 +1,6 @@
 function checkForSpam(message) {
-  const messageLast = message.toUpperCase();
-  if (messageLast.indexOf(spam) || messageLast.indexOf(sale)) {
+  let messageLast = message.toLowerCase();
+  if (messageLast.includes(spam) || messageLast.includes(sale)) {
     return true;
   } else {
     return false;
