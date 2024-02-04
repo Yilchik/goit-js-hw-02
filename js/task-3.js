@@ -2,11 +2,7 @@ function checkForSpam(message) {
   let messageLast = message.toLowerCase();
   let messageSpam = messageLast.includes('spam');
   let messageSale = messageLast.includes('sale');
-  if (messageSpam === true || messageSale === true) {
-    return true;
-  } else {
-    return false;
-  }
+  messageSpam || messageSale;
 }
 checkForSpam();
 
